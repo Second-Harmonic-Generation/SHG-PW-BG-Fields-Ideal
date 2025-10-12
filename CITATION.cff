@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the article below."
+title: "Pulsed Bessel–Gauss beams: a depleted wave model for type II second-harmonic generation"
+authors:
+  - family-names: "Sabaeian"
+    given-names: "Mohammad"
+  - family-names: "Motazedian"
+    given-names: "Alireza"
+  - family-names: "Rezaee"
+    given-names: "Mostafa Mohammad"
+  - family-names: "Jalil-Abadi"
+    given-names: "Fatemeh Sedaghat"
+doi: 10.1364/AO.53.007691
+url: "https://doi.org/10.1364/AO.53.007691"
+journal: "Applied Optics"
+volume: "53"
+issue: "32"
+start: "7691"
+end: "7696"
+date-released: 2014-11-05
+repository-code: "https://github.com/Second-Harmonic-Generation/SHG-PW-BG-Fields-Ideal"
+keywords:
+  - "Bessel–Gauss beams"
+  - "second-harmonic generation"
+  - "type-II phase matching"
+  - "depleted-wave model"
+  - "KTP"
+  - "pulsed SHG"
