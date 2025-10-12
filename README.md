@@ -17,8 +17,8 @@ This will create your own copy of this project, which you can modify freely — 
 | **Term** | **Definition** |
 |----------|----------------|
 | **SHG** | Second Harmonic Generation |
-| **CW** | Continuous Wave |
-| **G** | Gaussian |
+| **PW** | Pulsed Wave |
+| **BG** | Bessel-Gaussian |
 </div>
 
 &nbsp;
@@ -26,7 +26,7 @@ This will create your own copy of this project, which you can modify freely — 
 <div align="center">
 
 Article title:       
-**Temperature Distribution in a Gaussian End-Pumped Nonlinear KTP Crystal: the Temperature Dependence of Thermal Conductivity and Radiation Boundary Condition**
+**Pulsed Bessel–Gauss beams: a depleted wave model for type II second-harmonic generation**
 </div>
 
 &nbsp;
@@ -87,19 +87,28 @@ Folder PATH listing
 │       SHG-banner.png            <-- SHG project banner
 │
 +---results                       <-- Numerical simulation results and benchmark data
-│       ST_085_time_1_T_r.plt     <-- Radial temperature profile data
-│       ST_085_time_1_T_t.plt     <-- Transverse temperature profile data
-│       ST_085_time_1_T_z.plt     <-- Axial temperature profile data
+│       E08_f_4000_Np_1_tp_50_…   <-- Best iteration results data
+│       E_08_f_4000_Np_1_tp_50…   <-- Electric field component r-direction data
+│       E_08_f_4000_Np_1_tp_50…   <-- Electric field component t-direction data
+│       E_08_f_4000_Np_1_tp_50…   <-- Electric field component z-direction data
+│       E_08_f_4000_Np_1_tp_50…   <-- Electric field component r-direction data
+│       E_08_f_4000_Np_1_tp_50…   <-- Electric field component t-direction data
+│       E_08_f_4000_Np_1_tp_50…   <-- Electric field component z-direction data
+│       E_08_f_4000_Np_1_tp_50…   <-- Electric field component r-direction data
+│       E_08_f_4000_Np_1_tp_50…   <-- Electric field component t-direction data
+│       E_08_f_4000_Np_1_tp_50…   <-- Electric field component z-direction data
+│       E_08_f_4000_Np_1_tp_50…   <-- Scale maximum data
+│       E_08_f_4000_Np_1_tp_50…   <-- Phase pick data for Psi2
+│       E_08_f_4000_Np_1_tp_50…   <-- Phase pick data for Psi3
 │
 +---src                           <-- Toolkit source code and documentation
-│       Code_SHG-CW-G-Heat-Equ…   <-- Fortran finite difference solver (main toolkit)
+│       Code_SHG-PW-BG-Field-…    <-- Fortran finite difference solver (main toolkit)
 │
-│       Article_SHG-CW-G-Heat-…   <-- Research paper PDF (problem solved by toolkit)
+│       Article_SHG-PW-BG-Fiel…   <-- Research paper PDF (problem solved by toolkit)
 │       CITATION.cff              <-- Citation metadata file
 │       LICENSE                   <-- Project license information
 │       README.md                 <-- Toolkit overview and documentation
 │
-
 ```
 
 ## 2. Getting Started
