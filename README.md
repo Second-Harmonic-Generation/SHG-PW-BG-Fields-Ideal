@@ -118,41 +118,42 @@ Folder PATH listing
 - **Text Editor** (VS Code, Cursor, or any Fortran-capable editor)
 - **PDF Reader** (for accessing research papers)
 - **Git** (for cloning the repository)
+- **Plotting Software** (Gnuplot, Python matplotlib, or similar for visualizing results)
 
 ### 2.2. Quick Start
 
-1. **Clone the repository**
+1. **Clone the Repository**
    ```bash
-   git clone https://github.com/Second-Harmonic-Generation/SHG-CW-G-Heat-Equation.git
-   cd SHG-CW-G-Heat-Equation
+   git clone https://github.com/Second-Harmonic-Generation/SHG-PW-BG-Fields-Ideal.git
+   cd SHG-PW-BG-Fields-Ideal
    ```
 
 2. **Explore the Research Papers**
    - Navigate to the `citation/` folder
-   - Read the main research paper: `Article_SHG-CW-G-Heat-Equation.pdf`
+   - Read the main research paper: `Article_SHG-PW-BG-Field-Ideal.pdf`
    - Review additional papers for comprehensive understanding
 
-3. **Compile and Run the Toolkit**
+3. **Compile and Run the Simulation**
    ```bash
    cd src
-   gfortran -o heat_equation Code_SHG-CW-G-Heat-Equation.f90
-   ./heat_equation
+   gfortran -o shg_simulation Code_SHG-PW-BG-Field-Ideal.f90
+   ./shg_simulation
    ```
 
 4. **Analyze Results**
-   - Check the `results/` folder for output files and benchmark data
-   - Examine `.plt` files for temperature distribution profiles (radial, transverse, axial)
-   - Use plotting software (Gnuplot, Python matplotlib, etc.) to visualize results
+   - Check the `results/` folder for output files
+   - Examine `.plt` files for electric field component data
+   - Use plotting software to visualize the simulation results:
+     ```bash
+     # Example with Gnuplot
+     gnuplot -e "plot 'results/E_08_f_4000_Np_1_tp_50_Elec12_r.plt' with lines"
+     ```
 
-5. **Run Parameterized Scenarios** (Optional)
-   - Edit the Fortran source code to change simulation parameters
-   - Explore different scenarios:
-     - Temperature-dependent vs. constant thermal conductivity
-     - Convection ± radiation boundary conditions
-     - Various heat-transfer coefficients (6.5–2.0×10⁴ W·m⁻²·K⁻¹)
-   - Recompile and run to compare results with published findings
+5. **Explore Different Parameters** (Optional)
+   - Edit the Fortran source code to modify simulation parameters
+   - Recompile and run to explore different scenarios
+   - Compare results with published findings in the research papers
 
----
 
 
 ## 3. How to Cite Us
