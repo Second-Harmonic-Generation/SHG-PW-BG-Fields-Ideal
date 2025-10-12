@@ -60,15 +60,15 @@ Article title:
 
 ## 1. About this repository
 
-This repository contains the **Toolkit for Modeling of 3D Temperature Distribution in KTP Crystal: Continuous-Wave Gaussian Second Harmonic Generation**, an open-source toolkit for modeling the thermal dynamics that underpin continuous-wave second-harmonic generation (CW SHG), using KTP as a case study.
+This repository contains the **Toolkit for Pulsed Bessel-Gauss Second Harmonic Generation Modeling**, an open-source toolkit for modeling three-dimensional and time-dependent nonlinear wave interactions in type II second-harmonic generation (SHG) using KTP crystals.
 
 ### Toolkit Overview
 
-The toolkit provides comprehensive modules for geometry and material definitions of KTP crystals, boundary and cooling models with various heat transfer mechanisms, and transient and steady-state finite-difference solvers for temperature field computation.
+The toolkit provides comprehensive modules for solving three coupled nonlinear wave equations (two for fundamental waves and one for second-harmonic waves) in type II SHG processes. It implements a depleted wave model that accounts for the depletion of fundamental waves during the nonlinear interaction, providing accurate modeling of pulsed Bessel-Gauss beam propagation and frequency conversion.
 
-The toolkit supports parameterized scenario sweeps including temperature-dependent versus constant thermal conductivity, convection with and without radiation boundary conditions, and heat-transfer coefficients spanning 6.5–2.0×10⁴ W·m⁻²·K⁻¹. It features compiled Fortran kernels with built-in benchmark reporting, reproducible pipelines with versioned code repository, and exportable datasets with spatiotemporal temperature fields. The toolkit generates both radial and axial temperature profiles for comprehensive analysis.
+The toolkit supports parameterized scenario analysis including pulse energy variations, beam spot size effects, and interaction length optimization. It features compiled Fortran kernels with built-in numerical solvers, reproducible simulation pipelines with versioned code repository, and exportable datasets with electric field components and phase information. The toolkit generates comprehensive analysis of second-harmonic generation efficiency and beam characteristics.
 
-The implementation has been validated by reproducing temperature distributions and trends for KTP under Gaussian CW pumping, including the effects of temperature-dependent conductivity and boundary conditions. This toolkit was used to solve the thermal modeling problem described in the research article **"Temperature Distribution in a Gaussian End-Pumped Nonlinear KTP Crystal: the Temperature Dependence of Thermal Conductivity and Radiation Boundary Condition"**.  
+The implementation has been validated by reproducing the nonlinear interaction dynamics described in the research, demonstrating that for pulses with spot sizes of 80 µm and energy of 0.8 J, nonlinear interaction occurs over approximately 5 mm. This toolkit was used to solve the modeling problem described in the research article **"Pulsed Bessel-Gauss beams: a depleted wave model for type II second-harmonic generation"**.  
 
 
 ```
