@@ -62,8 +62,6 @@ Article title:
 
 This repository contains the **Toolkit for Pulsed Bessel-Gauss Second Harmonic Generation Modeling**, an open-source toolkit for modeling three-dimensional and time-dependent nonlinear wave interactions in type II second-harmonic generation (SHG) using KTP crystals.
 
-### Toolkit Overview
-
 The toolkit provides comprehensive modules for solving three coupled nonlinear wave equations (two for fundamental waves and one for second-harmonic waves) in type II SHG processes. It implements a depleted wave model that accounts for the depletion of fundamental waves during the nonlinear interaction, providing accurate modeling of pulsed Bessel-Gauss beam propagation and frequency conversion.
 
 The toolkit supports parameterized scenario analysis including pulse energy variations, beam spot size effects, and interaction length optimization. It features compiled Fortran kernels with built-in numerical solvers, reproducible simulation pipelines with versioned code repository, and exportable datasets with electric field components and phase information. The toolkit generates comprehensive analysis of second-harmonic generation efficiency and beam characteristics.
